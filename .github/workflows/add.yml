@@ -23,3 +23,11 @@ jobs:
     - name: Run the Python script
       run: |
         python add.py 5 10
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+
+    - name: Run the JavaScript script
+      run: |
+        node add.js 7 8
